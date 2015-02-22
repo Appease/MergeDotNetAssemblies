@@ -1,5 +1,5 @@
 **What is it?**
-A [Posh-CI](https://github.com/Posh-CI/Posh-CI) step for [ILMerge](http://research.microsoft.com/en-us/people/mbarnett/ILMerge.aspx)
+A [Posh-CI](https://github.com/Posh-CI/Posh-CI) step for  invoking [ilmerge.exe](http://research.microsoft.com/en-us/people/mbarnett/ILMerge.aspx)
 
 **How do I use it?**
 

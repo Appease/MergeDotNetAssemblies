@@ -7,7 +7,7 @@
 		<authors>Chris Dostert</authors>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>
-			A Posh-CI step for ILMerge
+			A Posh-CI step for invoking ilmerge.exe
 			
 			Installation notes: 
 			-	installs to:  C:\ProgramFiles\Posh-CI\Modules\Posh-CI-ILMerge
