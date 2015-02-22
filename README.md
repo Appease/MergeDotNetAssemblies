@@ -20,5 +20,5 @@ an array of parameters to pass to ilmerge.exe
 ```
 
 **What's the build Status?**
-![](https://ci.appveyor.com/api/projects/status/78dvewyub2c3ih9c?svg=true)
+![](https://ci.appveyor.com/api/projects/status/1isgxdu1b2ajxmgb?svg=true)
 
