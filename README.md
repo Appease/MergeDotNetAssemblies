@@ -1,24 +1,20 @@
-**What is it?**
+####What is it?
+
 A [Posh-CI](https://github.com/Posh-CI/Posh-CI) step for  invoking [ilmerge.exe](http://research.microsoft.com/en-us/people/mbarnett/ILMerge.aspx)
 
-**How do I use it?**
+####How do I install it?
 
-add an entry in your ci plans `Packages.config` file
-```Xml
-<packages>
-  <package id="posh-ci-ilmerge" />
-  <!-- other dependencies snipped -->
-</packages>
+```PowerShell
+Add-CIStep -Name "YOUR-CISTEP-NAME" -ModulePackageId "Posh-CI-ILMerge"
 ```
 
-then just pass variables to Invoke-CIPlan according to the following parameters:
+####What parameters are available?
 
-#####ILMergeParameters Parameter
+#####ILMergeParameters
 an array of parameters to pass to ilmerge.exe
 ```PowerShell
-[string[]][Parameter(ValueFromPipelineByPropertyName = $true)]$ILMergeParameters
+[string[]][Parameter(Mandatory=$true,ValueFromPipelineByPropertyName = $true)]$ILMergeParameters
 ```
 
-**What's the build Status?**
+####What's the build status?
 ![](https://ci.appveyor.com/api/projects/status/1isgxdu1b2ajxmgb?svg=true)
-
