@@ -1,11 +1,11 @@
 ####What is it?
 
-A [Posh-CI](https://github.com/Posh-CI/Posh-CI) step for  invoking [ilmerge.exe](http://research.microsoft.com/en-us/people/mbarnett/ILMerge.aspx)
+A [PoshCI](https://github.com/PoshCI/PoshCI) step for  invoking [ilmerge.exe](http://research.microsoft.com/en-us/people/mbarnett/ILMerge.aspx)
 
 ####How do I install it?
 
 ```PowerShell
-Add-CIStep -Name "YOUR-CISTEP-NAME" -ModulePackageId "Posh-CI-ILMerge"
+Add-CIStep -Name "YOUR-CISTEP-NAME" -PackageId "ILMerge"
 ```
 
 ####What parameters are available?
@@ -13,7 +13,11 @@ Add-CIStep -Name "YOUR-CISTEP-NAME" -ModulePackageId "Posh-CI-ILMerge"
 #####ILMergeParameters
 an array of parameters to pass to ilmerge.exe
 ```PowerShell
-[string[]][Parameter(Mandatory=$true,ValueFromPipelineByPropertyName = $true)]$ILMergeParameters
+[String[]]
+[Parameter(
+    Mandatory=$true,
+    ValueFromPipelineByPropertyName=$true)]
+$IlMergeParameters
 ```
 
 ####What's the build status?
