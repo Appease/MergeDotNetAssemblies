@@ -12,13 +12,13 @@ function EnsureILMergeInstalled(){
     }    
 }
 
-function Invoke-CIStep(
+function Invoke-PoshDevOpsTask(
 
 [String]
 [Parameter(
     Mandatory=$true,
     ValueFromPipelineByPropertyName=$true)]
-$PoshCIProjectRootDirPath,
+$PoshDevOpsProjectRootDirPath,
 
 [String[]]
 [Parameter(
@@ -43,4 +43,4 @@ Invoking ilmerge with:
     }
 }
 
-Export-ModuleMember -Function Invoke-CIStep
+Export-ModuleMember -Function Invoke-PoshDevOpsTask

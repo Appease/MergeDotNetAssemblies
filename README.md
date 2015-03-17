@@ -1,11 +1,11 @@
 ####What is it?
 
-A [PoshCI](https://github.com/PoshCI/PoshCI) step for  invoking [ilmerge.exe](http://research.microsoft.com/en-us/people/mbarnett/ILMerge.aspx)
+A [PoshDevOps](https://github.com/PoshDevOps/PoshDevOps) step for  invoking [ilmerge.exe](http://research.microsoft.com/en-us/people/mbarnett/ILMerge.aspx)
 
 ####How do I install it?
 
 ```PowerShell
-Add-CIStep -Name "YOUR-CISTEP-NAME" -PackageId "ILMerge"
+Add-PoshDevOpsTask -Name "YOUR-CISTEP-NAME" -PackageId "ILMerge"
 ```
 
 ####What parameters are available?

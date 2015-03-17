@@ -6,10 +6,10 @@
 		<authors>Chris Dostert</authors>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>
-			A PoshCI step for invoking ilmerge.exe
+			A PoshDevOps task for invoking ilmerge.exe
 		</description>
 		<tags>Powershell Posh-CI ILMerge</tags>
-		<projectUrl>https://github.com/PoshCI/ILMerge</projectUrl>
+		<projectUrl>https://github.com/PoshDevOps/ILMerge</projectUrl>
 	</metadata>	
 	<files>
 		<file src="**" target="tools\ILMerge" exclude="**\.nuspec"/>
