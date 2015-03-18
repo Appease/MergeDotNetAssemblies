@@ -21,4 +21,4 @@ $IlMergeParameters
 ```
 
 ####What's the build status?
-![](https://ci.appveyor.com/api/projects/status/1isgxdu1b2ajxmgb?svg=true)
+![](https://ci.appveyor.com/api/projects/status/4g5pxn3ky6y2t6xq?svg=true)
