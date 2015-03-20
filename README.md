@@ -5,7 +5,7 @@ A [PoshDevOps](https://github.com/PoshDevOps/PoshDevOps) task for  invoking [ilm
 ####How do I install it?
 
 ```PowerShell
-Add-PoshDevOpsTask -Name "YOUR-CISTEP-NAME" -PackageId "ILMerge"
+Add-PoshDevOpsTask -Name "YOUR-TASK-NAME" -PackageId "ILMerge"
 ```
 
 ####What parameters are available?
