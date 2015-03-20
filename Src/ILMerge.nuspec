@@ -6,9 +6,9 @@
 		<authors>Chris Dostert</authors>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>
-			A PoshDevOps task for invoking ilmerge.exe
+			A Poshtask for invoking ilmerge.exe
 		</description>
-		<tags>Powershell Posh-CI ILMerge</tags>
+		<tags>Powershell PoshDevOps ILMerge</tags>
 		<projectUrl>https://github.com/PoshDevOps/ILMerge</projectUrl>
 	</metadata>	
 	<files>
