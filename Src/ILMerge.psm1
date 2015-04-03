@@ -1,41 +1,22 @@
 # halt immediately on any errors which occur in this module
 $ErrorActionPreference = 'Stop'
 
-function EnsureILMergeInstalled(){
-
-    try{
-        Get-Command ilmerge -ErrorAction Stop | Out-Null
-    }
-    catch{       
-        Write-Debug "installing ilmerge via chocolatey"      
-        choco install ilmerge | Out-Null
-    }    
-}
-
-function Invoke-PoshDevOpsTask(
-
-[String]
-[Parameter(
-    Mandatory=$true,
-    ValueFromPipelineByPropertyName=$true)]
-$PoshDevOpsProjectRootDirPath,
+function Invoke(
 
 [String[]]
 [Parameter(
     Mandatory=$true,
     ValueFromPipelineByPropertyName=$true)]
-$IlMergeParameters){
-    
-    EnsureILMergeInstalled
+$ILMergeParameters){
 	
 
-    $ilMergePath = 'ilmerge'
+    $ILMergeCommand = 'ilmerge'
 Write-Debug `
 @"
 Invoking ilmerge with: 
-& $ilMergePath $($IlMergeParameters|Out-String)
+& $ILMergeCommand $($ILMergeParameters|Out-String)
 "@
-    & $ilMergePath $IlMergeParameters
+    & $ILMergeCommand $ILMergeParameters
 
     # handle errors
     if ($LastExitCode -ne 0) {
@@ -43,4 +24,4 @@ Invoking ilmerge with:
     }
 }
 
-Export-ModuleMember -Function Invoke-PoshDevOpsTask
+Export-ModuleMember -Function Invoke

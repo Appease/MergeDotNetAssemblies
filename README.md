@@ -1,24 +1,19 @@
+![](https://ci.appveyor.com/api/projects/status/4g5pxn3ky6y2t6xq?svg=true)
+
 ####What is it?
 
-A [PoshDevOps](https://github.com/PoshDevOps/PoshDevOps) task for  invoking [ilmerge.exe](http://research.microsoft.com/en-us/people/mbarnett/ILMerge.aspx)
+An [Appease](http://appease.io) task template that merges .net assemblies using [ilmerge.exe](http://research.microsoft.com/en-us/people/mbarnett/ILMerge.aspx)
 
 ####How do I install it?
 
 ```PowerShell
-Add-PoshDevOpsTask -Name "YOUR-TASK-NAME" -PackageId "ILMerge"
+Add-AppeaseTask `
+    -DevOpName YOUR-DEVOP-NAME `
+    -Name YOUR-TASK-NAME `
+    -TemplateId MergeDotNetAssemblies
 ```
 
-####What parameters are available?
+####What parameters are required?
 
 #####ILMergeParameters
-an array of parameters to pass to ilmerge.exe
-```PowerShell
-[String[]]
-[Parameter(
-    Mandatory=$true,
-    ValueFromPipelineByPropertyName=$true)]
-$IlMergeParameters
-```
-
-####What's the build status?
-![](https://ci.appveyor.com/api/projects/status/4g5pxn3ky6y2t6xq?svg=true)
+description: a `string[]` representing parameters to pass to ilmerge.exe
